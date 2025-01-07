@@ -13,7 +13,7 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix='!', intents=intents, help_command=None)
 
-@bot.event
+@bot.eventLOL
 async def on_ready():
     print(f'{bot.user} has connected to Discord!')
     try:
@@ -25,7 +25,7 @@ async def on_ready():
 async def load_extensions():
     for filename in os.listdir("./cogs"):
         if filename.endswith(".py"):
-            await bot.load_extension(f"cogs.{filename[:-3]}")
+            await bot.load_extension(f"cogs.{filename[:-3]}")   
             print(f"Loaded {filename}")
 
 async def main():
@@ -33,3 +33,4 @@ async def main():
     await bot.start(config['token'])
 
 asyncio.run(main())
+    
