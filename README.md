@@ -20,6 +20,9 @@ Create a `requirements.txt` file with the following content:
 
 ```text
 discord.py==2.3.2
+youtube-dl
+PyNaCl
+propcache
 ```
 
 Install dependencies:
