@@ -13,7 +13,7 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix='!', intents=intents, help_command=None)
 
-@bot.eventLOL
+@bot.event
 async def on_ready():
     print(f'{bot.user} has connected to Discord!')
     try:
